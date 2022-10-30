@@ -181,8 +181,8 @@
         searchRows = [];
         console.log(dataRows);
         dataRows.forEach((row) => {
-          console.log(row["상품가격(원)"])
-          console.log(typeof row["상품가격(원)"])
+          console.log(Object.keys(row))
+          console.log(typeof row["상품명"])
           if (row["상품명"].includes(value)){
             searchRows.push(row);
           }
