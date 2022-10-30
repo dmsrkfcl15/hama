@@ -181,10 +181,6 @@
         var num = 1;
         console.log(dataRows);
         dataRows.forEach((row) => {
-          console.log(num)
-          console.log(Object.keys(row))
-          console.log(typeof row["상품명"])
-          num++;
           if (row["상품명"].includes(value)){
             searchRows.push(row);
           }
