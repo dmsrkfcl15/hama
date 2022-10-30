@@ -46,7 +46,7 @@
         <input id="searchForm" type="text">
       </div>
       <div class="table-responsive">
-        <a class="link" href="./index2.html">컵</a>
+        <a class="link" href="./index.html">그릇</a>
         <table class="table table-striped custom-table">
           <thead>
             <tr>
@@ -83,7 +83,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-    
     <script>
       var searchForm = document.getElementById('searchForm');
       var searchBtn = document.getElementById('searchBtn');
@@ -113,7 +112,7 @@
 
       const requestXlSX = async () => {
         try {
-          const res = await fetch("./assets/plates.xlsx");
+          const res = await fetch("./assets/cups.xlsx");
           if (!res.ok) {
             throw new Error(`xlsx file 요청 실패 ${e.message}`);
           }
